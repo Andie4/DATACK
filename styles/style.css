@@ -1,0 +1,786 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --deep-blue: #111D37;
+    --typoWhite: #F6F6F6;
+    --yellow : #FFC636;
+    --brown : #943520;
+    --sand : #D8C09E;
+    --backgroundCard: #F2F2F2;
+    --hr: #242F47;
+}
+
+.podkova {
+    font-family: "Podkova", serif;
+    font-optical-sizing: auto;
+  }
+
+.sorts-mill-goudy-regular {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sorts-mill-goudy-regular-italic {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+
+.bold{
+    font-weight: bold;
+}
+
+/* mobile  */
+
+@media screen and (max-width: 425px) {
+
+
+    h2{
+        font-size: 1.5rem;
+        color: #943520;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+
+    /* ressources  */
+    #linkRessources{
+        padding: 0.5rem;
+        background-color : var(--deep-blue);
+        color: white;
+        /* display: grid; */
+        /* justify-content: center; */
+        width: 100%;
+    }
+
+    .corner{
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 1.5rem;
+        /* margin-left: 0.5rem;
+        margin-right: 0.5rem; */
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem ;
+        padding-right: 1rem;
+
+    }
+
+    .corner img {
+        width: 3rem;
+    }
+
+    .textStyle{
+        font-size: 1.8rem;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .styleParagraphe{
+        text-align: center;
+        margin-bottom: 3rem;
+
+    }
+
+    a .ressources{
+        color: white;
+        font-weight: bold;
+        background-color: var(--brown);
+    }
+
+    .titreRessources{
+        color: white;
+        font-size: 1.5rem;
+        font-style: italic;
+        text-transform: none;
+        margin-top: 0;
+    }
+
+    .textCenter{
+        display:block;
+        align-items: center;
+        margin: auto;
+        width: 18rem;
+    }
+
+    .infoRessources{
+        display: grid;
+        justify-items: center;
+        
+        a{
+            background-color: var(--brown);
+            color: var(--typoWhite);
+            font-weight: bold;
+            padding: 0.8rem 1.8rem ;
+            border-radius: 5px ;
+            border: none;
+            margin-bottom: 3rem;
+            text-decoration: none;
+
+        }
+    }
+
+    /* témoignages  */
+
+    #testimonies{
+        padding: 1rem;
+    }
+
+    #testimonies{
+        background-image: url("../medias/geyPoints.png");
+        height: fit-content;
+        position: relative;
+    }
+
+    .card p {
+        margin-top: 0;
+    } 
+    
+    .card{
+        margin: 1rem;
+        background-color: var(--backgroundCard);
+        border-radius: 8px;
+        padding:  0.5rem 1rem;
+        box-shadow: 2px 5px lightGrey;
+        
+    }
+
+    .guillemets{
+        height: 2rem;
+        margin-bottom: 0.5rem;
+        font-family: "Sorts Mill Goudy";
+    }
+
+    .textTextimonies{
+        font-family: podkova; 
+        color: var(--deep-blue);
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    span{
+        color: var(--brown);
+        font-size: 1.5rem;
+    }
+    
+    .alignRight{
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: end;
+    }
+
+    .bgGreyPoints{
+        z-index: 1;
+    }
+
+    hr{
+        width: 4rem;
+    }
+
+
+/* footer  */
+
+    .footer{
+        padding: 1rem;
+        background-color: var(--deep-blue);
+        color: var(--typoWhite);
+    }
+    .titleFooter{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--typoWhite);
+    }
+    .spanFooter{
+        color: var(--yellow);
+        font-size: 1.5rem;
+    }
+    
+    hr{
+        border: 1px solid var(--hr);
+        margin-bottom: 1rem;
+        width: 90%;
+        display: flex;
+        justify-content: left;
+    }
+
+    h3{
+        color: var(--yellow);
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+    .groupeFooter{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    ul {
+        padding-left: 0;
+        display: grid;
+        justify-content: center;
+        li {
+            list-style: none;
+            
+            a {
+                color: var(--typoWhite);
+                display: grid;
+                justify-content: center;
+                text-decoration: none;
+            }
+
+        }
+    }
+
+    .contact{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .marginBtm{
+        margin-bottom: 2rem;
+    }
+
+    .titreFooter{
+        text-transform: uppercase;
+    }
+
+
+
+}
+
+/* tablet */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+
+    h2{
+        font-size: 1.5rem;
+        color: #943520;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+
+    /* ressources  */
+    #linkRessources{
+        padding: 0.5rem;
+        background-color : var(--deep-blue);
+        color: white;
+        /* display: grid; */
+        /* justify-content: center; */
+        width: 100%;
+    }
+
+    .corner{
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 1.5rem;
+        /* margin-left: 0.5rem;
+        margin-right: 0.5rem; */
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem ;
+        padding-right: 1rem;
+
+    }
+
+    .corner img {
+        width: 3rem;
+    }
+
+    .textStyle{
+        font-size: 1.8rem;
+        margin: 0;
+        font-weight: bold;
+
+    }
+
+    .styleParagraphe{
+        text-align: center;
+        margin-bottom: 3rem;
+
+    }
+
+    a .ressources{
+        color: white;
+        font-weight: bold;
+        background-color: var(--brown);
+    }
+
+    .titreRessources{
+        color: white;
+        font-size: 1.5rem;
+        font-style: italic;
+        text-transform: none;
+        margin-top: 0;
+    }
+
+    .textCenter{
+        display:block;
+        align-items: center;
+        margin: auto;
+        width: 18rem;
+    }
+
+    .infoRessources{
+        display: grid;
+        justify-items: center;
+        
+        a{
+            background-color: var(--brown);
+            color: var(--typoWhite);
+            font-weight: bold;
+            padding: 0.8rem 1.8rem ;
+            border-radius: 5px ;
+            border: none;
+            margin-bottom: 3rem;
+            text-decoration: none;
+
+        }
+        a:hover {
+            background-color: var(--yellow);
+            color: var(--deep-blue);
+            transition: cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+            transform: scale(1.05);
+        }
+    }
+
+    /* témoignages  */
+
+    #testimonies{
+        padding: 1rem;
+    }
+
+    #testimonies{
+        background-image: url("../medias/geyPoints.png");
+        height: fit-content;
+        position: relative;
+    }
+
+    .card p {
+        margin-top: 0;
+    } 
+
+    .testimoniesList ul{
+        display: grid;
+        justify-content: center;
+        grid-auto-flow: column;
+        gap: 1rem;
+    }
+    
+    .card{
+        margin: 1rem;
+        background-color: var(--backgroundCard);
+        border-radius: 8px;
+        padding:  0.5rem 1rem;
+        box-shadow: 2px 5px lightGrey;
+        
+    }
+
+    .guillemets{
+        height: 2rem;
+        margin-bottom: 0.5rem;
+        font-family: "Sorts Mill Goudy";
+    }
+
+    .textTextimonies{
+        font-family: podkova; 
+        color: var(--deep-blue);
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    span{
+        color: var(--brown);
+        font-size: 1.5rem;
+    }
+    
+    .alignRight{
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: end;
+    }
+
+    .bgGreyPoints{
+        z-index: 1;
+    }
+
+    hr{
+        width: 4rem;
+    }
+
+
+/* footer  */
+
+    .footer{
+        padding: 1rem;
+        background-color: var(--deep-blue);
+        color: var(--typoWhite);
+    }
+    .titleFooter{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--typoWhite);
+    }
+    .spanFooter{
+        color: var(--yellow);
+        font-size: 1.5rem;
+    }
+    
+
+    hr{
+        border: 1px solid var(--hr);
+        margin-bottom: 1rem;
+        width: 70%;
+        display: flex;
+        justify-content: left;
+    }
+
+    h3{
+        color: var(--yellow);
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+    .groupeFooter{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    ul {
+        padding-left: 0;
+        display: grid;
+        justify-content: center;
+        li {
+            list-style: none;
+            
+            a {
+                color: var(--typoWhite);
+                display: grid;
+                justify-content: center;
+                text-decoration: none;
+            }
+
+        }
+    }
+
+    .contact{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .marginBtm{
+        margin-bottom: 2rem;
+    }
+
+    .titreFooter{
+        text-transform: uppercase;
+    }
+
+    .link{
+        cursor: pointer;
+    }
+
+    .link:hover{
+        color: var(--yellow);
+        text-decoration: underline;
+    }
+
+
+
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+
+
+    h2{
+        font-size: 1.5rem;
+        color: #943520;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+
+    /* ressources  */
+    #linkRessources{
+        padding: 0.5rem;
+        background-color : var(--deep-blue);
+        color: white;
+        /* display: grid; */
+        /* justify-content: center; */
+        width: 100%;
+    }
+
+    .corner{
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 3rem;
+        /* margin-left: 0.5rem;
+        margin-right: 0.5rem; */
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3rem ;
+        padding-right: 3rem;
+
+    }
+
+    .corner img {
+        width: 6rem;
+    }
+
+    .textStyle{
+        font-size: 3.8rem;
+        font-weight: bold;
+        margin: 0;
+
+    }
+
+    .styleParagraphe{
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 1.3rem;
+    }
+
+
+    .titreRessources{
+        color: white;
+        font-size: 2rem;
+        font-style: italic;
+        text-transform: none;
+        margin-top: 0;
+
+    }
+
+    .textCenter{
+        display:block;
+        align-items: center;
+        margin: auto;
+        width: 18rem;
+    }
+
+    .infoRessources{
+        display: grid;
+        justify-items: center;
+        
+        a{
+            background-color: var(--brown);
+            color: var(--typoWhite);
+            font-weight: bold;
+            padding: 1rem 3.3rem ;
+            border-radius: 5px ;
+            border: none;
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: var(--yellow);
+            color: var(--deep-blue);
+            transition: cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+            transform: scale(1.05);
+        }
+
+    }
+
+    /* témoignages  */
+
+    #testimonies{
+        padding: 3rem;
+    }
+
+    #testimonies{
+        background-image: url("../medias/geyPoints.png");
+        height: fit-content;
+        position: relative;
+    }
+
+    .card p {
+        margin-top: 0;
+    } 
+    
+    .card{
+        margin: 1rem;
+        background-color: var(--backgroundCard);
+        border-radius: 8px;
+        padding:  0.5rem 1rem;
+        box-shadow: 2px 5px lightGrey;
+        
+    }
+
+    .guillemets{
+        height: 2rem;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        font-family: "Sorts Mill Goudy";
+    }
+
+    .textTextimonies{
+        font-family: podkova; 
+        color: var(--deep-blue);
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    span{
+        color: var(--brown);
+        font-size: 1.5rem;
+    }
+    
+    .alignRight{
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: end;
+    }
+
+    .hrTestimonies{
+        border: 1px solid var(--hr);
+        margin-bottom: 1rem;
+        width: 7rem;
+        display: flex;
+        justify-content: left;
+    }
+
+    .bgGreyPoints{
+        z-index: 1;
+    }
+
+    hr{
+        width: 4rem;
+    }
+
+
+/* footer  */
+
+    .footer{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        background-color: var(--deep-blue);
+        color: var(--typoWhite);
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+    .flexContent{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .titleFooter{
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--typoWhite);
+    }
+    .spanFooter{
+        color: var(--yellow);
+        font-size: 1.5rem;
+    }
+    
+    hr{
+        border: 1px solid var(--hr);
+        margin-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    vr{
+        border-left: 2px solid var(--hr);
+        height: 100%;
+        margin-left: 40%;
+    }
+
+    .removeHr{
+        display: none;
+    }
+
+    h3{
+        color: var(--yellow);
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+    /* .groupeFooter{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    } */
+
+    .infosFooter{
+        display: flex;
+        gap: 5rem;
+    }
+
+    .flexDesktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+
+        padding-left: 0rem;
+        padding-right: 3rem;
+        display: grid;
+        justify-items: start;
+        gap: 1rem;
+        li {
+            list-style: none;
+            
+            a {
+                color: var(--typoWhite);
+                display: grid;
+                justify-content: center;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .testimoniesList ul{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        display: grid;
+        justify-content: center;
+        grid-auto-flow: column;
+        gap: 2rem;
+    }
+
+    .contact{
+        display: grid;
+        justify-items: start;
+    }
+
+    .link{
+        cursor: pointer;
+    }
+
+    .link:hover{
+        color: var(--yellow);
+        text-decoration: underline;
+    }
+
+    .marginBtm{
+        margin-bottom: 2rem;
+    }
+
+    .titreFooter{
+        text-transform: uppercase;
+    }
+
+}
