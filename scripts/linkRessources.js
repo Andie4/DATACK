@@ -1,4 +1,4 @@
-export function dropdown() {
+export function linkRessources() {
 
     let container = document.querySelector("#linkRessources")
 
@@ -18,4 +18,4 @@ export function dropdown() {
 
 }
 
-dropdown();
+linkRessources();

@@ -1,4 +1,4 @@
-export function dropdown() {
+export function testimonies() {
 
     let container = document.querySelector("#testimonies")
 
@@ -50,4 +50,4 @@ export function dropdown() {
     `
 }
 
-dropdown();
+testimonies();

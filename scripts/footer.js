@@ -1,4 +1,4 @@
-export function dropdown() {
+export function footer() {
 
     let container = document.querySelector("#footer")
 
@@ -36,4 +36,4 @@ export function dropdown() {
 
 }
 
-dropdown();
+footer();
