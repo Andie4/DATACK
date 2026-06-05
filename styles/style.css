@@ -693,6 +693,10 @@ body {
         margin-bottom: 2rem;
     }
 
+    .footer > .marginBtm:last-child{
+        margin-bottom: 0;
+    }
+
     .titreFooter{
         text-transform: uppercase;
     }
@@ -1078,6 +1082,21 @@ body {
         font-size: 1rem;
     }
 
+}
+
+/* Footer — tablette / desktop étroit : évite que .infosFooter déborde à droite */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .footer vr {
+        margin-left: 1rem;
+    }
+
+    .footer .infosFooter {
+        gap: 2.5rem;
+    }
+
+    .footer ul {
+        padding-right: 0;
+    }
 }
 
 
