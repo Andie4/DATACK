@@ -1,0 +1,103 @@
+:root {
+    --deep-blue: #111D37;
+    --typoWhite: #F6F6F6;
+    --yellow : #FFC636;
+    --brown : #943520;
+    --sand : #D8C09E;
+    --backgroundCard: #F2F2F2;
+    --hr: #242F47;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+}
+
+  
+.podkova {
+    font-family: "Podkova", serif;
+    font-optical-sizing: auto;
+  }
+
+.sorts-mill-goudy-regular {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sorts-mill-goudy-regular-italic {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+
+.bold{
+    font-weight: bold;
+}
+
+ /* Style main */
+  
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--deep-blue); 
+    margin: 4vh 0 7vh 0;
+}
+  
+h2 {
+    font-size: 2rem;
+    margin: 30px 0;
+    font-family: "Podkova", serif;
+    color: var(--deep-blue);
+}
+
+h3{
+    color: var(--brown); 
+    font-size: 0.95rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+
+main a {
+    font-size: 1.2rem;
+    /* color: var(--color3); */
+}
+
+/* Mentions légales */
+main {
+    gap: 5%;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.div-nav{
+    position: relative;
+    top: -2vh;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 768px) {
+
+}
+
+/* tablet */
+@media screen and (min-width: 769px) {
+
+}
+
+/* desktop */
+@media screen and (min-width: 1025px) {
+
+}
+  
+
+
