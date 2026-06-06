@@ -28,7 +28,7 @@ export function footer() {
         <hr>
         <div class="groupeFooter flexDesktop">
             <p>© 2026 Datack — Tous droits réservés</p>
-            <p class="link">Mentions légales • Politique de confidentialité • CGU</p>
+            <a class="link" href="mentions">Mentions légales • Politique de confidentialité • CGU</a>
         </div>
     </div>
 
