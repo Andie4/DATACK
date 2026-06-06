@@ -1,0 +1,259 @@
+:root {
+    --deep-blue: #111D37;
+    --typoWhite: #F6F6F6;
+    --yellow : #FFC636;
+    --brown : #943520;
+    --sand : #D8C09E;
+    --backgroundCard: #F2F2F2;
+    --hr: #242F47;
+}
+
+body{
+    background-color: var(--deep-blue);
+    color: var(--typoWhite);
+    font-family: "Montserrat", sans-serif;
+}
+
+  
+.podkova {
+    font-family: "Podkova", serif;
+    font-optical-sizing: auto;
+  }
+
+.sorts-mill-goudy-regular {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sorts-mill-goudy-regular-italic {
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+
+.bold{
+    font-weight: bold;
+}
+  
+  /* Style main */
+  
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--typoWhite); 
+    margin: 4vh 0 7vh 0;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    margin: 30px 0;
+    font-family: "Podkova", serif;
+    color: var(--deep-blue);
+
+  }
+  
+  h3{
+    font-size: 1.2rem;
+    color: var(--yellow); 
+  }
+  
+  main p {
+    font-size: 1.15rem;
+  }
+  
+  main a {
+    font-size: 1.2rem;
+    /* color: var(--color3); */
+  }
+  
+  /* Mentions légales */
+  main {
+    display: flex;
+    gap: 5%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  
+  .div-nav{
+    position: relative;
+    top: -2vh;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+  }
+  
+  main nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: var(--sand);
+    height: 350px;
+  }
+  
+  main nav h2 {
+    text-align: center;
+  }
+  
+  main nav a {
+    margin-left: 30px;
+    color: #0C0B18;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    max-width: 750px;
+    gap: 20px;
+  }
+
+  ul{
+    padding-top: 0.5rem;
+    list-style: none;
+  }
+
+  a{
+    cursor: pointer;
+    color: #ffffff;
+}
+  a:hover{
+    cursor: pointer;
+    color: var(--yellow);
+
+}
+
+.sommaire a{
+    cursor: pointer;
+    color: var(--deep-blue);
+    font-size: 0.95rem;
+}
+.sommaire  a:hover{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1cqmax;
+}
+
+/* footer  */
+
+.footer{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  background-color: var(--deep-blue);
+  color: var(--typoWhite);
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.flexContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.titleFooter{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--typoWhite);
+}
+.spanFooter{
+  color: var(--yellow);
+  font-size: 1.5rem;
+}
+
+hr{
+  border: 1px solid var(--hr);
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+vr{
+  border-left: 2px solid var(--hr);
+  height: 100%;
+  /* margin-left: 40%; */
+}
+
+.removeHr{
+  display: none;
+}
+
+h3{
+  color: var(--yellow);
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+/* .groupeFooter{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+} */
+
+.infosFooter{
+  display: flex;
+  gap: 5rem;
+}
+
+.flexDesktop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer ul {
+
+  padding-left: 0rem;
+  padding-right: 3rem;
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+  li {
+      list-style: none;
+      
+      a {
+          color: var(--typoWhite);
+          display: grid;
+          justify-content: center;
+          text-decoration: none;
+      }
+  }
+}
+
+.testimoniesList ul{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
+  /* gap: 2rem; */
+}
+
+.contact{
+  display: grid;
+  justify-items: start;
+}
+
+.link{
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.link:hover{
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+.marginBtm{
+  margin-bottom: 2rem;
+}
+
+.titreFooter{
+  text-transform: uppercase;
+}
