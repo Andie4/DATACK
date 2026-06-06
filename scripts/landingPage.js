@@ -13,7 +13,7 @@
             <div class="landingHero__imageWrap">
                 <img
                     class="landingHero__image"
-                    src="medias/landingImage.png"
+                    src="medias/landingImage.webp"
                     alt="Enfant avec une loupe pendant un atelier"
                 >
             </div>
@@ -22,8 +22,7 @@
                 <p class="landingHero__kicker">ATELIER LUDO-PEDAGOGIQUE</p>
                 <h1 class="landingHero__title">LE MYSTERE<br>D'ALICE</h1>
                 <p class="landingHero__intro">
-                    Venez decouvrir un atelier ludique et stimulant sur les donnees
-                    personnelles, pour les petits et les grands.
+                    Venez découvrir un atelier ludique et stimulant sur les données personnelles, pour les petits et les grands.
                 </p>
                 <a class="landingHero__cta" href="ressources.html">
                     Voir les ressources 
