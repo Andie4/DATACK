@@ -11,9 +11,8 @@ export function linkRessources() {
         <h2 class="titreRessources">Organisez votre atelier</h2>
         <p class="podkova textStyle">Prêt à mener l’enquête ?</p>
         <p class="styleParagraphe">L’atelier est disponible pour les établissements scolaires, associations et entreprises.</p>
-        <a class="ressources" href="test.html">Découvrir les ressources</a>
+        <a class="ressources" href="ressources.html">Découvrir les ressources</a>
     </div>
-
     `
 
 }
