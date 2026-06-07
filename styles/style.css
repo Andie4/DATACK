@@ -42,6 +42,10 @@ body {
     font-weight: bold;
 }
 
+.white{
+    color: var(--typoWhite);
+}
+
 
 .programSection {
     padding: 1.5rem 1rem 2rem;
@@ -704,6 +708,8 @@ body {
     .link{
         cursor: pointer;
     }
+
+
 
     .link:hover{
         color: var(--yellow);
