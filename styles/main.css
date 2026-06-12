@@ -282,10 +282,8 @@ header {
     position: relative;
     z-index: 1;
     background-color: var(--blue);
-}
-
-.page-ressources header {
     box-shadow: 0 13px 18px rgba(0, 0, 0, 0.22);
+
 }
 
 .navbar {
@@ -606,6 +604,8 @@ header {
 }
 
 .programList {
+    list-style: none;
+    padding: 0;
     display: grid;
     gap: 1.1rem;
 }
