@@ -3,37 +3,35 @@ export function footer() {
     let container = document.querySelector("#footer")
 
     container.innerHTML = `
-    <div class="flexContent">
-        <h2 class="titleFooter">Datack <span class="spanFooter">--</span></h2>
-        <vr></vr>
-        <hr class="removeHr">
-        <div class="infosFooter flexDesktop">
-            <div class="groupeFooter marginBtm">
-                <h3 class="titreFooter titreFooter">Navigation</h3>
+    <div class="footerTop footerBlock">
+        <div class="footerBrand">
+            <img class="logoImg" src="medias/logo-alice.svg" alt="Le Mystère d'Alice">
+        </div>
+        <div class="footerCols">
+            <div class="footerCol">
+                <h3 class="footerHeading">Navigation</h3>
                 <ul>
-                    <li><a href="index.html" class="link">Accueil</a></li>
-                    <li><a href="ressources.html" class="link">Les ressources</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="ressources.html">Les ressources</a></li>
                 </ul>
             </div>
-            <div class="groupeFooter marginBtm">
-                <h3 class="titreFooter titreFooter">Contact</h3>
-                <ul class="contact groupeFooter">
-                    <li><a href="mailto:contact@datack.fr" class="link">contact@datack.fr</a></li>
+            <div class="footerCol">
+                <h3 class="footerHeading">Contact</h3>
+                <ul>
+                    <li><a href="mailto:contact@datack.fr">contact@datack.fr</a></li>
                     <li>+33 (0)1 XX XX XX XX</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="marginBtm">
+    <div>
         <hr>
-        <div class="groupeFooter flexDesktop">
-            <p>© 2026 Datack — Tous droits réservés</p>
-            <a class="link white" href="mentions.html">Mentions légales • Politique de confidentialité • CGU</a>
+        <div class="footerRow">
+            <p>© 2026 Datack · Tous droits réservés</p>
+            <a href="mentions.html">Mentions légales • Politique de confidentialité • CGU</a>
         </div>
     </div>
-
     `
-
 }
 
 footer();
