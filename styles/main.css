@@ -584,6 +584,18 @@ header {
     margin-top: 0.6rem;
 }
 
+.originsMedia .faqItem {
+    margin-top: 0.6rem;
+}
+
+.originsMedia .faqItem[open] {
+    box-shadow: var(--shadow-sm);
+}
+
+.originsMedia .faqAnswer {
+    padding-bottom: 1rem;
+}
+
 .rule {
     border: none;
     border-top: 1px solid var(--line);
@@ -708,6 +720,7 @@ header {
 .programDetails {
     padding: 0 1.3rem 1.1rem;
     animation: reveal-down 0.3s ease-out;
+    font-size: 0.95rem;
 }
 
 .programDetails p {
