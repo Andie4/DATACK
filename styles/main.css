@@ -541,20 +541,25 @@ header {
 .videoBox {
     background: linear-gradient(160deg, var(--blue) 0%, var(--blue-2) 100%);
     border-radius: 14px;
-    padding: clamp(2.5rem, 6vw, 4rem);
+    /* padding: clamp(2.5rem, 6vw, 4rem); */
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 14rem;
     box-shadow: var(--shadow-md);
-
+    
     video{
-        width: 25rem;
-        height: 10rem;
+        width: 35rem;
+        height: 20rem;
+            border-radius: 14px;
+
     }
+
 }
 
+
 .playBtn {
+    position: absolute;
     width: 4.5rem;
     height: 4.5rem;
     background: var(--brown);
