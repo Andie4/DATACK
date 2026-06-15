@@ -549,10 +549,12 @@ header {
     box-shadow: var(--shadow-md);
     
     video{
-        width: 35rem;
-        height: 20rem;
-            border-radius: 14px;
-
+        width: 100%;
+        max-width: 35rem;
+        height: auto;
+        aspect-ratio: 35 / 20;
+        object-fit: cover;
+        border-radius: 14px;
     }
 
 }
