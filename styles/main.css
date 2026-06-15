@@ -309,6 +309,25 @@ header {
     font-size: 0.95rem;
 }
 
+.navbar .btn-outline {
+    padding: 0.65rem 1.3rem;
+    font-size: 0.95rem;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navLink {
+    display: none;
+}
+
+.navToggle {
+    display: none;
+}
+
 .footer {
     background-color: var(--blue);
     color: var(--cream);
@@ -1632,6 +1651,95 @@ header {
 
     .chartCanvas {
         height: 24rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .navToggle {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 2.75rem;
+        height: 2.75rem;
+        padding: 0;
+        background-color: transparent;
+        border: 2px solid var(--line-light);
+        border-radius: 8px;
+        transition: border-color 0.2s ease;
+    }
+
+    .navToggle:hover,
+    .navToggle[aria-expanded="true"] {
+        border-color: var(--yellow);
+    }
+
+    .navToggle span {
+        display: block;
+        width: 1.25rem;
+        height: 2px;
+        margin-inline: auto;
+        background-color: var(--cream);
+        transition: transform 0.25s ease, opacity 0.2s ease;
+    }
+
+    .navToggle[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .navToggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navToggle[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0.5rem clamp(1.25rem, 5vw, 4rem) 1rem;
+        background-color: var(--blue);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .navMenu.is-open {
+        display: flex;
+        animation: reveal-down 0.25s ease-out;
+    }
+
+    .navLink {
+        display: block;
+        padding: 0.9rem 0.25rem;
+        color: var(--cream);
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px solid var(--line-light);
+        transition: color 0.2s ease;
+    }
+
+    .navLink:hover,
+    .navLink:focus-visible {
+        color: var(--yellow);
+    }
+
+    .navMenu .btn,
+    .navMenu .btn-outline {
+        margin-top: 0.75rem;
+        width: 100%;
     }
 }
 
