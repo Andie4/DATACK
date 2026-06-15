@@ -23,7 +23,14 @@
             <a href="index.html" class="logo" aria-label="Accueil">
                 <img class="logoImg" src="medias/logo-alice.svg" alt="Le Mystère d'Alice">
             </a>
-            <a href="ressources.html" class="btn">Découvrir l'atelier</a>
+            <button class="navToggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="navMenu" id="navMenu" aria-label="Navigation principale">
+                <a class="navLink" href="index.html">Accueil</a>
+                <a href="a-propos.html" class="btn-outline">À propos</a>
+                <a href="ressources.html" class="btn">Découvrir l'atelier</a>
+            </nav>
         </div>
     </header>
 
@@ -96,6 +103,7 @@
                 <h3 class="footerHeading">Navigation</h3>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
                     <li><a href="ressources.html">Les ressources</a></li>
                 </ul>
             </div>
@@ -118,6 +126,7 @@
         </div>
     </footer>
 
+    <script src="scripts/nav.js" defer></script>
 
 </body>
 

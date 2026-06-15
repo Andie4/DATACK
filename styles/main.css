@@ -205,14 +205,10 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.55rem;
+    color: var(--white);
     padding: 0.85rem 1.7rem;
     border-radius: 8px;
-    border: 2px solid transparent;
-    font-family: var(--font-body);
-    font-size: 1rem;
     font-weight: 700;
-    line-height: 1;
     text-decoration: none;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease,
@@ -236,12 +232,6 @@ p {
 .btn svg {
     width: 1.2rem;
     height: 1.2rem;
-}
-
-.btn-outline {
-    background-color: transparent;
-    color: currentColor;
-    border-color: currentColor;
 }
 
 .btn-outline:hover,
@@ -317,6 +307,25 @@ header {
 .navbar .btn {
     padding: 0.65rem 1.3rem;
     font-size: 0.95rem;
+}
+
+.navbar .btn-outline {
+    padding: 0.65rem 1.3rem;
+    font-size: 0.95rem;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navLink {
+    display: none;
+}
+
+.navToggle {
+    display: none;
 }
 
 .footer {
@@ -1461,6 +1470,149 @@ header {
     word-break: break-word;
 }
 
+.page-about .aboutHeroInner {
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+}
+
+.aboutLead {
+    max-width: 48rem;
+    color: var(--cream-soft);
+}
+
+.aboutActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.6rem;
+}
+
+.aboutStats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.aboutStat {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--line-light);
+    border-radius: 14px;
+    padding: 1.15rem 1rem;
+}
+
+.aboutStatValue {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--cream);
+    margin-bottom: 0.35rem;
+}
+
+.aboutStatLabel {
+    display: block;
+    color: var(--cream-soft);
+    font-size: 0.88rem;
+    line-height: 1.45;
+}
+
+.aboutSectionIntro {
+    max-width: 48rem;
+    color: var(--ink-soft);
+    margin-bottom: 1.75rem;
+}
+
+.aboutProjectGrid,
+.aboutTeamGrid,
+.aboutGoalGrid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.aboutPanel,
+.aboutTeamCard,
+.aboutGoalCard {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    padding: 1.5rem;
+}
+
+.aboutPanel {
+    border-left: 4px solid var(--yellow);
+}
+
+.aboutPanel p,
+.aboutTeamCard p,
+.aboutGoalCard p {
+    color: var(--ink-soft);
+}
+
+.aboutPanel h3,
+.aboutGoalCard h3 {
+    margin-bottom: 0.6rem;
+}
+
+.aboutChecklist {
+    display: grid;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+    color: var(--ink-soft);
+}
+
+.aboutTeamCard {
+    border-top: 4px solid var(--brown);
+}
+
+.aboutTeamRole {
+    color: var(--brown);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.55rem;
+}
+
+.aboutTeamNames {
+    display: grid;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    padding-left: 1.1rem;
+    list-style: disc;
+    color: var(--blue);
+}
+
+.aboutGoalCard {
+    border-top: 4px solid var(--yellow);
+}
+
+.aboutGoalCard .aboutStatValue {
+    color: var(--blue);
+    margin-bottom: 0.6rem;
+}
+
+@media (min-width: 48em) {
+    .page-about .aboutHeroInner {
+        grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.9fr);
+        align-items: center;
+    }
+
+    .aboutProjectGrid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    }
+
+    .aboutTeamGrid,
+    .aboutGoalGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (min-width: 48em) {
     .factGrid {
         grid-template-columns: repeat(4, 1fr);
@@ -1504,6 +1656,95 @@ header {
 
     .chartCanvas {
         height: 24rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .navToggle {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 2.75rem;
+        height: 2.75rem;
+        padding: 0;
+        background-color: transparent;
+        border: 2px solid var(--line-light);
+        border-radius: 8px;
+        transition: border-color 0.2s ease;
+    }
+
+    .navToggle:hover,
+    .navToggle[aria-expanded="true"] {
+        border-color: var(--yellow);
+    }
+
+    .navToggle span {
+        display: block;
+        width: 1.25rem;
+        height: 2px;
+        margin-inline: auto;
+        background-color: var(--cream);
+        transition: transform 0.25s ease, opacity 0.2s ease;
+    }
+
+    .navToggle[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .navToggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navToggle[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0.5rem clamp(1.25rem, 5vw, 4rem) 1rem;
+        background-color: var(--blue);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .navMenu.is-open {
+        display: flex;
+        animation: reveal-down 0.25s ease-out;
+    }
+
+    .navLink {
+        display: block;
+        padding: 0.9rem 0.25rem;
+        color: var(--cream);
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px solid var(--line-light);
+        transition: color 0.2s ease;
+    }
+
+    .navLink:hover,
+    .navLink:focus-visible {
+        color: var(--yellow);
+    }
+
+    .navMenu .btn,
+    .navMenu .btn-outline {
+        margin-top: 0.75rem;
+        width: 100%;
     }
 }
 
