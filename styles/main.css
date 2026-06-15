@@ -538,6 +538,11 @@ header {
     justify-content: center;
     min-height: 14rem;
     box-shadow: var(--shadow-md);
+
+    video{
+        width: 25rem;
+        height: 10rem;
+    }
 }
 
 .playBtn {
