@@ -4,49 +4,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datack</title>
+    <title>Datack - Le Mystère d'Alice, atelier sur les données personnelles</title>
+    <meta name="description" content="Datack : un atelier ludo-pédagogique façon enquête pour sensibiliser petits et grands à la protection des données personnelles.">
     <link rel="shortcut icon" href="medias/favicon.svg" type="image/x-icon">
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Podkova:wght@400..800&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Podkova:wght@400..800&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
     <header role="banner" id="header">
-    </header>
-    <main role="main">
-        <div id="landingPage"></div>
-
-        <div id="origins"></div>
-
-        <div id="program"></div>
-
-        <div id="linkRessources"></div>
-
-        <div id="testimonies">
-
+        <div class="navbar">
+            <a href="index.html" class="logo" aria-label="Accueil">
+                <img class="logoImg" src="medias/logo-alice.svg" alt="Le Mystère d'Alice">
+            </a>
+            <a href="ressources.html" class="btn">Découvrir l'atelier</a>
         </div>
+    </header>
+
+    <main role="main" id="main">
+
+        <section class="hero" aria-label="Atelier ludo-pédagogique">
+            <div class="heroBg"></div>
+
+            <div class="heroMedia">
+                <img class="heroImg" src="medias/landingImage.webp" alt="Enfant avec une loupe pendant un atelier">
+            </div>
+
+            <div class="heroInner">
+                <article class="heroPanel">
+                    <p class="heroKicker">Atelier ludo-pédagogique</p>
+                    <h1 class="heroTitle">Le mystère<br>d'Alice</h1>
+                    <p class="heroIntro">
+                        Venez découvrir un atelier ludique et stimulant sur les données personnelles, pour les petits et les grands.
+                    </p>
+                    <a class="btn-link" href="ressources.html">
+                        Voir les ressources <span aria-hidden="true">&#8594;</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="origins" aria-label="Origines de l'atelier">
+            <div class="originsInner">
+                <div class="originsCol">
+                    <p class="eyebrow">Origines</p>
+                    <h2 class="originsTitle podkova">Naissance du projet</h2>
+                    <p class="originsText">Datack est né d'un constat simple : peu de gens comprennent réellement comment leurs données sont utilisées en ligne. Le Mystère d'Alice propose une solution ludique et engageante pour explorer ce sujet, en s'amusant. Ainsi, au fil de l'enquête, les participants découvrent concrètement l'importance de protéger leurs données personnelles, et propose des solutions pour mieux les gérer.</p>
+                </div>
+
+                <div class="originsMedia">
+                    <div class="videoBox">
+                        <button class="playBtn" type="button" aria-label="Lire la présentation du projet"></button>
+                    </div>
+                    <div class="caption">Présentation du projet</div>
+                    <hr class="rule">
+                    <details class="faqItem transcriptDropdown">
+                        <summary class="faqSummary">
+                            <span class="faqQuestion">Transcription textuelle</span>
+                            <span class="faqMark" aria-hidden="true"></span>
+                        </summary>
+                        <div class="faqAnswer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                        </div>
+                    </details>
+                    <hr class="rule">
+                </div>
+            </div>
+        </section>
+
+        <section class="programSection" aria-labelledby="programHeading">
+            <div class="wrap">
+                <p class="eyebrow">Programme</p>
+                <h2 id="programHeading" class="programIntro">Déroulé de l'atelier</h2>
+
+                <ol class="programList">
+                    <li class="programStep">
+                        <details class="programDropdown" name="programStep">
+                            <summary class="programSummary">
+                                <span class="programNumber" aria-hidden="true">01</span>
+                                <span class="programBody">
+                                    <span class="programHeader">
+                                        <h3 class="programTitle">Introduction - Entrer dans l'enquête</h3>
+                                        <span class="programDuration">5 min</span>
+                                    </span>
+                                    <p class="programText">Mise en contexte de l'histoire, découverte du rôle d'Alice et remise du dossier d'enquête à chaque participant.</p>
+                                </span>
+                            </summary>
+                            <div class="programDetails">
+                                <p class="programStepExtra">Les animateurs présentent le cadre de l'atelier, les objectifs et les règles du jeu. Les participants découvrent le mystère à résoudre et se répartissent en équipes d'enquêteurs.</p>
+                                <ul>
+                                    <li>Présentation rapide du scénario et des personnages.</li>
+                                    <li>Distribution des fiches et du carnet d'enquête.</li>
+                                    <li>Premiers repères sur la protection des données personnelles.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="programStep">
+                        <details class="programDropdown" name="programStep">
+                            <summary class="programSummary">
+                                <span class="programNumber" aria-hidden="true">02</span>
+                                <span class="programBody">
+                                    <span class="programHeader">
+                                        <h3 class="programTitle">L'enquête - Lire les traces numériques</h3>
+                                        <span class="programDuration">20 min</span>
+                                    </span>
+                                    <p class="programText">En équipes, les participants analysent les indices, recoupent les informations et reconstituent le profil numérique des suspects.</p>
+                                </span>
+                            </summary>
+                            <div class="programDetails">
+                                <p class="programStepExtra">Cette phase centrale plonge les participants dans l'analyse de données concrètes : historiques, publications, métadonnées et habitudes de navigation. Ils doivent repérer ce qui est visible, ce qui est déductible et ce qui relève d'une donnée personnelle sensible.</p>
+                                <ul>
+                                    <li>Observation des indices et tri des informations utiles.</li>
+                                    <li>Confrontation des traces numériques avec les hypothèses de l'équipe.</li>
+                                    <li>Discussion sur les risques de partage excessif en ligne.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="programStep">
+                        <details class="programDropdown" name="programStep">
+                            <summary class="programSummary">
+                                <span class="programNumber" aria-hidden="true">03</span>
+                                <span class="programBody">
+                                    <span class="programHeader">
+                                        <h3 class="programTitle">Final - Résoudre l'affaire en collectif</h3>
+                                        <span class="programDuration">10 min</span>
+                                    </span>
+                                    <p class="programText">Jeu collectif final pour assembler les indices, valider les bonnes réponses et identifier le responsable de la fuite de données.</p>
+                                </span>
+                            </summary>
+                            <div class="programDetails">
+                                <p class="programStepExtra">Les équipes confrontent leurs conclusions lors d'un mini-jeu collaboratif de décryptage. Cette dernière étape permet de consolider les apprentissages tout en gardant un rythme dynamique et ludique.</p>
+                                <ul>
+                                    <li>Mise en commun des indices trouvés pendant l'enquête.</li>
+                                    <li>Résolution finale avec les animateurs.</li>
+                                    <li>Débrief sur les bons réflexes à retenir au quotidien.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="programStep">
+                        <details class="programDropdown" name="programStep" open>
+                            <summary class="programSummary">
+                                <span class="programNumber" aria-hidden="true">04</span>
+                                <span class="programBody">
+                                    <span class="programHeader">
+                                        <h3 class="programTitle">Conclusion & prolongements</h3>
+                                        <span class="programDuration">10 min</span>
+                                    </span>
+                                    <p class="programText">Synthèse des apprentissages, remise du guide pratique et temps d'échange pour repartir avec des conseils concrets.</p>
+                                </span>
+                            </summary>
+                            <div class="programDetails">
+                                <p class="programStepExtra">
+                                    Les participants reviennent sur les notions clés vues pendant l'atelier : identification des données personnelles, gestion des paramètres de confidentialité et vigilance face aux usages en ligne.
+                                </p>
+                                <ul>
+                                    <li>Résumé des réflexes à adopter sur les réseaux et applications.</li>
+                                    <li>Remise des ressources pour poursuivre la sensibilisation.</li>
+                                    <li>Questions/réponses avec les animateurs.</li>
+                                </ul>
+                                <a class="btn-link" href="ressources.html">
+                                    Voir les ressources <span aria-hidden="true">&rarr;</span>
+                                </a>
+                            </div>
+                        </details>
+                    </li>
+                </ol>
+
+                <p class="programTotal"><span class="bold">Total :</span> 45min</p>
+            </div>
+        </section>
+
+        <section class="inviteBand" aria-label="Organisez votre atelier">
+            <div class="corner">
+                <img src="medias/angleGauche.svg" alt="">
+                <img src="medias/angleDroit.svg" alt="">
+            </div>
+            <div class="invite">
+                <p class="eyebrow">Organisez votre atelier</p>
+                <p class="inviteTitle podkova">Prêt à mener l'enquête ?</p>
+                <p class="inviteText">L'atelier est disponible pour les établissements scolaires, associations et entreprises.</p>
+                <a class="btn" href="ressources.html">Découvrir les ressources</a>
+            </div>
+        </section>
+
+        <section class="testimonials" aria-label="Témoignages">
+            <div class="wrap">
+                <p class="eyebrow">Témoignages</p>
+                <h2 class="testimonialsTitle">Ils ont vécu l'expérience</h2>
+                <div class="testimonialList">
+                    <ul>
+                        <li>
+                            <div class="card">
+                                <img src="medias/guillemetYellow.svg" class="quoteIcon" alt="">
+                                <p>J'ai beaucoup aimé le fait que ça soit interactif, qu'on puisse se déplacer dans la salle et que dès le début on soit plongé dans l'univers de l'enquête.</p>
+                                <div class="cardFoot">
+                                    <hr class="cardRule">
+                                    <p class="bold">Étudiante</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <img src="medias/guillemetBrown.svg" class="quoteIcon" alt="">
+                                <p>Votre projet est très intéressant et c'est le genre de projet qu'on aimerait voir plus souvent !</p>
+                                <div class="cardFoot">
+                                    <hr class="cardRule">
+                                    <p class="bold">Étudiante</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <img src="medias/guillemetCream.svg" class="quoteIcon" alt="">
+                                <p>Créatif, interactif et convivial, une bonne manière d'apprendre en s'amusant.</p>
+                                <div class="cardFoot">
+                                    <hr class="cardRule">
+                                    <p class="bold">Étudiant</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
     </main>
+
     <footer role="contentinfo">
-        <div id="footer" class="footer"></div>
+        <div id="footer" class="footer">
+            <div class="footerTop footerBlock">
+        <div class="footerBrand">
+            <img class="logoImg" src="medias/logo-alice.svg" alt="Le Mystère d'Alice">
+        </div>
+        <div class="footerCols">
+            <div class="footerCol">
+                <h3 class="footerHeading">Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="ressources.html">Les ressources</a></li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <h3 class="footerHeading">Contact</h3>
+                <ul>
+                    <li><a href="mailto:contact@datack.fr">contact@datack.fr</a></li>
+                    <li>+33 (0)1 XX XX XX XX</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <hr>
+        <div class="footerRow">
+            <p>© 2026 Datack · Tous droits réservés</p>
+            <a href="mentions.html">Mentions légales • Politique de confidentialité • CGU</a>
+        </div>
+    </div>
+        </div>
     </footer>
 
+    <script src="scripts/reveal.js" type="module"></script>
 </body>
-
-
-    <script src="scripts/header.js"  type="module"></script>
-    <script src="scripts/landingPage.js" type="module"></script>
-    <script src="scripts/origins.js" type="module"></script>
-    <script src="scripts/program.js" type="module"></script>
-    <script src="scripts/linkRessources.js"  type="module"></script>
-    <script src="scripts/testimonies.js"  type="module"></script>
-    <script src="scripts/footer.js"  type="module"></script>
 
 </html>
