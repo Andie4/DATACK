@@ -41,7 +41,7 @@
             <div class="heroBg"></div>
 
             <div class="heroMedia">
-                <img class="heroImg" src="medias/landingImage.webp" alt="Enfant avec une loupe pendant un atelier">
+                <img class="heroImg" src="medias/imgLandingPage.jpg" alt="Enfant avec une loupe pendant un atelier">
             </div>
 
             <div class="heroInner">
@@ -73,17 +73,10 @@
                     </div>
                     <div class="caption">Présentation du projet</div>
                     <hr class="rule">
-                    <details class="faqItem transcriptDropdown">
-                        <summary class="faqSummary">
-                            <span class="faqQuestion">Transcription textuelle</span>
-                            <span class="faqMark" aria-hidden="true"></span>
-                        </summary>
-                        <div class="faqAnswer">
-                            <p><em class="bold ">Voix d'Alice :</em>Tout comme moi j’imagine que tu es amené à utiliser Internet pour faire des achats, communiquer, te renseigner, te divertir et autres. Tout comme toi je pensais maîtriser ma présence en ligne mais il m’est arrivé quelque chose…</p>
-                            <p class="footerBlock">Moi c'est Alice. Le week-end dernier je suis partie sans mon téléphone. Pour ne pas perdre mes flammes Snap j'ai donné mes identifiants à mes meilleures amies. Évidemment je leur fais totalement confiance car ce sont mes amies, du moins c’est ce que je pensais. À mon retour de vacances mon mot de passe ne marchait plus. Et le lendemain au collège une fille m'a dit que j'avais posté des trucs bizarres sur Snap et Insta. Quelqu'un avait volé mon compte et usurpé mon identité !</p>
-                            <p><em class="bold">Voix Off :</em>Pour aider Alice vous allez mener l’enquête. Mais attention ça ne sera pas simple vous allez devoir analyser, observer et chercher des liens entre les données que vous aurez pour trouver l’auteur de cet acte malveillant. Mener l’enquête sur le mystère d’Alice va vous permettre d’identifier des données personnelles, de comprendre comment elles sont partagées aux autres et comment protéger votre présence en ligne face aux nombreux dangers.</p>
-                        </div>
-                    </details>
+                    <button class="faqItem transcriptTrigger" type="button" data-transcript-open aria-haspopup="dialog" aria-controls="transcriptModal">
+                        <span class="faqQuestion">Transcription textuelle</span>
+                        <span class="transcriptTriggerIcon" aria-hidden="true"></span>
+                    </button>
                     <hr class="rule">
                 </div>
             </div>
@@ -286,6 +279,28 @@
         </div>
     </footer>
 
+    <div class="transcriptModal" id="transcriptModal" role="dialog" aria-modal="true" aria-labelledby="transcriptModalTitle" hidden>
+        <div class="transcriptModalOverlay" data-transcript-close></div>
+        <div class="transcriptModalDialog" role="document">
+            <button class="transcriptModalClose" type="button" data-transcript-close aria-label="Fermer la transcription">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="transcriptModalGrid">
+                <div class="transcriptModalVideo">
+                    <video src="medias/Datack-Teaser.mp4" controls></video>
+                </div>
+                <div class="transcriptModalText">
+                    <h2 id="transcriptModalTitle" class="podkova">Transcription textuelle</h2>
+                    <p><em><strong>Voix d'Alice</strong></em> : Tout comme moi j'imagine que tu es amené à utiliser Internet pour faire des achats, communiquer, te renseigner, te divertir et autres. Tout comme toi je pensais maîtriser ma présence en ligne mais il m'est arrivé quelque chose…</p>
+                    <p>Moi c'est Alice. Le week-end dernier je suis partie sans mon téléphone. Pour ne pas perdre mes flammes Snap j'ai donné mes identifiants à mes meilleures amies. Évidemment je leur fais totalement confiance car ce sont mes amies, du moins c'est ce que je pensais. À mon retour de vacances mon mot de passe ne marchait plus. Et le lendemain au collège une fille m'a dit que j'avais posté des trucs bizarres sur Snap et Insta. Quelqu'un avait volé mon compte et usurpé mon identité !</p>
+                    <p><em><strong>Voix Off</strong></em> : Pour aider Alice vous allez mener l'enquête. Mais attention ça ne sera pas simple vous allez devoir analyser, observer et chercher des liens entre les données que vous aurez pour trouver l'auteur de cet acte malveillant. Mener l'enquête sur le mystère d'Alice va vous permettre d'identifier des données personnelles, de comprendre comment elles sont partagées aux autres et comment protéger votre présence en ligne face aux nombreux dangers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/transcript-modal.js" defer></script>
+    <script src="scripts/dropdown-scroll.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/reveal.js" type="module"></script>
 </body>
