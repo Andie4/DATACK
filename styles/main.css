@@ -41,6 +41,12 @@ button {
     border-radius: 3px;
 }
 
+summary:focus-visible {
+  border: 4px solid var(--brown);
+  border-radius: 3px;
+  outline: none;
+}
+
 :root {
     --blue: #111D37;
     --blue-2: #1B2F5C;
